@@ -1,0 +1,140 @@
+/* Base styles */
+.hero__image {
+  height: 220px;
+  background-color: #fff;
+  background-image: url("../img/imagen1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  color: #a6a5a8;
+}
+
+h1, h2, h3, h5, h6 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 700;
+  color: #0c0910;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #fff;
+  padding: 0 12px;
+  font-family: "Old Standard TT", serif;
+  font-size: 18px;
+  color: #fff;
+  background-color: #0c0910;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__list {
+  display: none;
+}
+
+.bars {
+  margin-right: 36px;
+}
+
+.main {
+  margin: 10px 36px;
+}
+.main__title {
+  margin-bottom: 0px;
+}
+.main__text {
+  margin-top: 0px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.form {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 126px;
+  background-color: #0c0910;
+}
+.form__content {
+  padding: 15px 36px;
+}
+.form__title {
+  margin: 0px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.form__label {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.button {
+  background-color: #fff;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.button--default {
+  height: 35px;
+  width: 100px;
+  border: 1px solid #0c0910;
+}
+.button--default:hover {
+  border: 1px solid #d1d1d1;
+}
+.button--default:focus {
+  border: 1px solid #d1d1d1;
+  color: #d1d1d1;
+}
+.button--form {
+  display: flex;
+  position: absolute;
+  right: -45px;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 126px;
+  transform: rotate(90deg);
+}
+.button--form:hover {
+  color: #a6a5a8;
+}
+.button--form:focus {
+  background-color: #d1d1d1;
+  color: #fff;
+}
+
+.form__input {
+  border: 1px solid #0c0910;
+  font-family: "Raleway", sans-serif;
+  padding-left: 10px;
+  height: 30px;
+  width: 70vw;
+}
+
+/*# sourceMappingURL=style.css.map */

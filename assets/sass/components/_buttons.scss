@@ -1,0 +1,36 @@
+.button {
+    background-color: $white;
+    border: none;
+    font-family: $raleway;
+    font-weight: bold;
+    font-size: $small;
+    &--default {
+        height: 35px;
+        width: 100px;
+        border: 1px solid $smoky-black;
+    }
+    &--default:hover {
+        border: 1px solid $light-gray;
+    }
+    &--default:focus {
+        border: 1px solid $light-gray;
+        color: $light-gray;
+    }
+    &--form {
+        display: flex;
+        position: absolute;
+        right: -45px;
+        align-items:center;
+        justify-content: center;
+        height: 36px;
+        width: 126px;
+        transform: rotate(90deg);
+        &:hover {
+            color: $quick-silver;
+        }
+        &:focus {
+            background-color: $light-gray;
+            color: $white;
+        }
+    }
+}

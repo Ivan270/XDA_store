@@ -1,0 +1,9 @@
+/* Base styles */
+.hero__image {
+    height: 220px;
+    background-color: $white;
+    background-image: url('../img/imagen1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}

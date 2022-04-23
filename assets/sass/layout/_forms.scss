@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 126px;
+    background-color: $smoky-black;
+    &__content {
+        padding: 15px 36px;
+    }
+    &__title {
+        margin: 0px ;
+        color: $white;
+        font-size: $xx-large;
+        font-weight: $regular;
+    }
+    &__label {
+        margin: 5px 0px;
+        display: flex;
+        flex-direction: column;
+        font-family: $old-standard;
+        font-weight: $regular;
+        color: $white;
+    }
+}

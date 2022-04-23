@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo{
+        color: $white;
+        padding:0 12px ;
+        font-family: $old-standard;
+        font-size: $large;
+        color: $white;
+        background-color: $smoky-black;
+    }
+
+}
+.navbar{
+    display: flex;
+    &__list{
+        display:none;
+    }
+
+}
+.bars{
+    margin-right: 36px;
+    }

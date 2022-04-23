@@ -1,0 +1,12 @@
+.main {
+    margin: 10px 36px;
+    &__title {
+
+        margin-bottom: 0px;
+    }
+    &__text {
+        margin-top: 0px;
+        font-size: $small;
+        line-height: 24px;
+    }
+}
