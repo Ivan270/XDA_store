@@ -6,7 +6,46 @@
     }
     &__text {
         margin-top: 0px;
+        margin-bottom: 20px;
         font-size: $small;
         line-height: 24px;
+    }
+    &__text-full {
+        display: none;
+    }
+}
+@include respond-to($bp-md) {
+    .main {
+        padding-right: 150px;
+        margin: 10px 80px;
+        &__title {
+            font-size: $xxx-large;
+        }
+        &__text {
+            display:none
+        }
+        &__text-full {
+            display: block;
+            padding-bottom: 10px;
+        }
+    }
+}
+@include respond-to($bp-xl){
+    .main{
+        align-items: center;
+        // height: 498px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row: 1 / 2;
+        padding-right: 0px;
+        &__text-full{
+            padding-right: 180px;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+        }
     }
 }

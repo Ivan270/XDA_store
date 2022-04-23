@@ -1,6 +1,7 @@
 // main.scss # Manifest file
 // Abstracts
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 // Vendors
 // Base
 @import 'base/base';
@@ -11,6 +12,7 @@
 @import 'layout/hero';
 @import 'layout/main';
 @import 'layout/forms';
+@import 'layout/grid-display';
 // Components
 @import 'components/buttons';
 @import 'components/inputs';

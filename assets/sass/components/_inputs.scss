@@ -1,7 +1,15 @@
 .form__input {
     border: 1px solid $smoky-black;
+    margin-bottom: 20px;
     font-family: $raleway;
     padding-left: 10px;
     height: 30px;
     width: 70vw;
+}
+@include respond-to($bp-xl){
+    .form__input{
+        display: grid;
+        grid-column: 1 / 4;
+        width: 150%;
+    }
 }

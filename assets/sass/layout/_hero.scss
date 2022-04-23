@@ -1,0 +1,25 @@
+.hero {
+    height: 20vh;
+}
+@include respond-to($bp-sm){
+    .hero {
+        height: 25vh;
+    }
+}
+@include respond-to($bp-md){
+    .hero {
+        height: 33vh;
+    }
+}
+@include respond-to($bp-lg){
+    .hero {
+        height: 43vh;
+    }
+}
+@include respond-to($bp-xl){
+    .hero {
+        height: 100%;
+        grid-column: 6 / 13;
+        grid-row: 1 / 3;
+    }
+}

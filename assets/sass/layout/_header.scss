@@ -1,14 +1,22 @@
 .header {
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     &__logo{
+        display: flex;
+        height: 100%;
+        align-self: center;
         color: $white;
         padding:0 12px ;
         font-family: $old-standard;
-        font-size: $large;
+        font-size: $medium;
         color: $white;
         background-color: $smoky-black;
+        & h4 {
+            margin: 0px;
+            align-self: center;
+        }
     }
 
 }
@@ -17,8 +25,30 @@
     &__list{
         display:none;
     }
-
 }
 .bars{
     margin-right: 36px;
     }
+
+@include respond-to($bp-md){
+    .header{
+        height: 93px;
+        &__logo{
+            padding:0 30px;
+        }
+    }
+    .navbar {
+        &__list {
+            font-family: $raleway;
+            font-weight: $bold;
+            font-size: $small;
+            display: flex;
+            list-style-type:none;
+            gap: 30px;
+            padding-right: 80px;
+        }       
+    }
+    .bars{
+        display:none;
+    }
+}
