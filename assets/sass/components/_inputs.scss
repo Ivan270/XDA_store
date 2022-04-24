@@ -5,6 +5,7 @@
     padding-left: 10px;
     height: 30px;
     width: 70vw;
+    animation: swing 3s linear 3s backwards;
 }
 @include respond-to($bp-xl){
     .form__input{

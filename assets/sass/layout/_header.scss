@@ -46,7 +46,13 @@
             list-style-type:none;
             gap: 30px;
             padding-right: 80px;
-        }       
+        }   
+        &__item {
+            transition: transform 0.2s linear;
+            &:hover{
+                transform: rotateZ(-15deg);
+            }
+        }    
     }
     .bars{
         display:none;

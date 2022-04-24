@@ -4,11 +4,17 @@
 
         margin-bottom: 0px;
     }
+
     &__text {
         margin-top: 0px;
         margin-bottom: 20px;
         font-size: $small;
         line-height: 24px;
+        transition: color 2s ease, font-size 2s ease;
+    }
+    &__text:hover{
+        color: $smoky-black;
+        font-size: $large;
     }
     &__text-full {
         display: none;
@@ -27,7 +33,17 @@
         &__text-full {
             display: block;
             padding-bottom: 10px;
+            transition: color 2s ease, font-size 2s linear;
         }
+        &__text-full:hover{
+            color: $smoky-black;
+            font-size: $large;
+        }
+    }
+}
+@include respond-to($bp-lg) {
+    .main {
+        padding-right: 250px;
     }
 }
 @include respond-to($bp-xl){

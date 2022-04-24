@@ -9,6 +9,7 @@
         height: 35px;
         width: 100px;
         border: 1px solid $smoky-black;
+        animation: rotation 2s ease-out 2s 3 backwards ;
     }
     &--default:hover {
         border: 1px solid $light-gray;
@@ -31,6 +32,7 @@
         width: 150px;
         transform-origin: top right;
         transform: rotate(90deg);
+        
         &:hover {
             color: $quick-silver;
         }

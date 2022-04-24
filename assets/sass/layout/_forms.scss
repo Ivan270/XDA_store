@@ -50,6 +50,10 @@
         }
         &__title {
             margin-bottom: 30px;
+            transition: transform 1s linear;
+        }
+        &__title:hover {
+            transform: scale(1.4)
         }
     }
 }

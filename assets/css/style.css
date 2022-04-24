@@ -45,6 +45,32 @@ h1, h2, h3, h5, h6 {
   color: #0c0910;
 }
 
+/* Animations */
+@keyframes rotation {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+@keyframes swing {
+  0% {
+    transform: translateX(5px);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .header {
   height: 55px;
   display: flex;
@@ -95,6 +121,12 @@ h1, h2, h3, h5, h6 {
     gap: 30px;
     padding-right: 80px;
   }
+  .navbar__item {
+    transition: transform 0.2s linear;
+  }
+  .navbar__item:hover {
+    transform: rotateZ(-15deg);
+  }
 
   .bars {
     display: none;
@@ -137,6 +169,11 @@ h1, h2, h3, h5, h6 {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
+  transition: color 2s ease, font-size 2s ease;
+}
+.main__text:hover {
+  color: #0c0910;
+  font-size: 18px;
 }
 .main__text-full {
   display: none;
@@ -156,6 +193,16 @@ h1, h2, h3, h5, h6 {
   .main__text-full {
     display: block;
     padding-bottom: 10px;
+    transition: color 2s ease, font-size 2s linear;
+  }
+  .main__text-full:hover {
+    color: #0c0910;
+    font-size: 18px;
+  }
+}
+@media (min-width: 996px) {
+  .main {
+    padding-right: 250px;
   }
 }
 @media (min-width: 1200px) {
@@ -229,6 +276,10 @@ h1, h2, h3, h5, h6 {
   }
   .form__title {
     margin-bottom: 30px;
+    transition: transform 1s linear;
+  }
+  .form__title:hover {
+    transform: scale(1.4);
   }
 }
 @media (min-width: 1200px) {
@@ -250,6 +301,7 @@ h1, h2, h3, h5, h6 {
   height: 35px;
   width: 100px;
   border: 1px solid #0c0910;
+  animation: rotation 2s ease-out 2s 3 backwards;
 }
 .button--default:hover {
   border: 1px solid #d1d1d1;
@@ -295,6 +347,7 @@ h1, h2, h3, h5, h6 {
   padding-left: 10px;
   height: 30px;
   width: 70vw;
+  animation: swing 3s linear 3s backwards;
 }
 
 @media (min-width: 1200px) {
