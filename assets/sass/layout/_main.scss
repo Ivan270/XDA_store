@@ -58,9 +58,12 @@
         grid-column-end: 6;
         grid-row: 1 / 2;
         padding-right: 0px;
+        &__title{
+            padding-bottom: 20px;
+        }
         &__text-full{
             padding-right: 180px;
-            padding-bottom: 0px;
+            padding-bottom: 30px;
             margin-bottom: 10px;
         }
     }

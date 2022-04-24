@@ -111,7 +111,13 @@ h1, h2, h3, h5, h6 {
   .header__logo {
     padding: 0 30px;
   }
-
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .header {
+    height: 8vh;
+  }
+}
+@media (min-width: 768px) {
   .navbar__list {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -127,7 +133,8 @@ h1, h2, h3, h5, h6 {
   .navbar__item:hover {
     transform: rotateZ(-15deg);
   }
-
+}
+@media (min-width: 768px) {
   .bars {
     display: none;
   }
@@ -217,9 +224,12 @@ h1, h2, h3, h5, h6 {
     grid-row: 1/2;
     padding-right: 0px;
   }
+  .main__title {
+    padding-bottom: 20px;
+  }
   .main__text-full {
     padding-right: 180px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
     margin-bottom: 10px;
   }
 }
@@ -241,6 +251,10 @@ h1, h2, h3, h5, h6 {
   color: #fff;
   font-size: 30px;
   font-weight: 400;
+  transition: transform 1s linear;
+}
+.form__title:hover {
+  transform: scale(1.1);
 }
 .form__label {
   margin: 5px 0px;
@@ -276,17 +290,13 @@ h1, h2, h3, h5, h6 {
   }
   .form__title {
     margin-bottom: 30px;
-    transition: transform 1s linear;
-  }
-  .form__title:hover {
-    transform: scale(1.4);
   }
 }
 @media (min-width: 1200px) {
   .grid-display {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 70vh 22vh;
   }
 }
 .button {

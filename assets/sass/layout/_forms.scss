@@ -15,6 +15,10 @@
         color: $white;
         font-size: $xx-large;
         font-weight: $regular;
+        transition: transform 1s linear;
+        &:hover {
+            transform: scale(1.1)
+        }
     }
     &__label {
         margin: 5px 0px;
@@ -50,10 +54,6 @@
         }
         &__title {
             margin-bottom: 30px;
-            transition: transform 1s linear;
-        }
-        &__title:hover {
-            transform: scale(1.4)
         }
     }
 }

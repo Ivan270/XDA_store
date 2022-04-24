@@ -36,7 +36,12 @@
         &__logo{
             padding:0 30px;
         }
+}
+@include respond-to($bp-xl){
+    .header{
+        height: 8vh;
     }
+}
     .navbar {
         &__list {
             font-family: $raleway;
